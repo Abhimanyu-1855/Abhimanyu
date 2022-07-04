@@ -543,9 +543,9 @@ h3
     margin-bottom: 60px;
 }
 .contact .contact-info-item {
-    flex: 0 0 25%;
+    flex: 0 0 20%;
     text-align: center;
-    max-width: 25%;
+    max-width: 20%;
     margin-top: 9%;
 }
 .contact .contact-info-item .icon{
