@@ -1,0 +1,648 @@
+:root{
+    --bg-black-900 : #f2f2fc;
+    --bg-black-100 : #fdf9ff;
+    --bg-black-50 : #e8dfec;
+    --text-black-900 : #302e4d;
+    --text-black-700 : #504e70;
+
+}
+.shadow-dark{
+    box-shadow: 0 0 20px rgb(40, 17, 62,0.75);
+}
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: sans-serif;
+
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.hidden{
+    display: none !important;
+}
+::before,::after
+{
+    box-sizing: border-box;
+}
+.section
+{
+    min-height: 100vh ;
+    display: block;
+    padding: 0 30px;
+    opacity: 1;
+}
+.section .container{
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+.main-content{
+    padding-left: 270px;
+}
+.padd-15
+{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+}
+ul{
+    list-style: none;
+}
+.side-container
+{
+    width: 300px;
+    background-color: whitesmoke;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 30px;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid aquamarine;
+}
+.side-container .logo
+{
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.side-container .logo a 
+{
+    color: var(--text-black-900);
+    font-weight: 700;
+    background: beige;
+    padding: 15px 20px;
+    letter-spacing: 5px;
+    position: relative;
+}
+.side-container .logo a span
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+.side-container .logo a::before
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    bottom: 0;
+    left: 0;
+
+}
+.side-container .logo a::after
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    top: 0;
+    right: 0;
+    
+}
+.side-container .nav
+{
+    margin-top: 50px;
+
+}
+.side-container .nav-toggler
+{
+    height: 40px;
+    width: 45px;
+    border: 1pc solid ;
+    cursor: pointer;
+    position: fixed;
+    left: 300px;
+    top: 20px;
+    border-radius: 5px;
+    background: var(--bg-black-100);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.side-container .nav-toggler  span{
+    width: 18px;
+    height: 2px;
+    background: var(--skin-color);
+    display: inline-block;
+    position: relative;
+}
+.side-container .nav-toggler  span::before{
+    content: ' ';
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+.side-container .nav-toggler  span::after{
+    content: ' ';
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+.side-container .nav li
+{
+    margin-bottom: 20px;
+    display: block;
+
+}
+.side-container .nav li a {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    border-bottom: 2px solid black;
+    color: var(--text-black-900);
+    padding: 5px 15px; 
+    text-align: left;
+
+}
+.side-container .nav li a:hover{
+    color: rebeccapurple;
+}
+.side-container .nav li a i {
+    margin-right: 15px;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+
+}
+.home .home-info {
+    flex: 0 0 60% ;
+    max-width: 60%;
+
+}
+.home .home-img {
+    flex: 0 0 40% ;
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+    
+}
+h3
+{
+    font-size: 30px;
+    margin: 15px 0;
+}
+.name {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(223, 1, 248);
+}
+.my-proffesion{
+    font-size: 30px;
+    margin: 50px 0;
+}
+.typing{
+    color: rebeccapurple;
+}
+.home-info p
+{
+    margin-bottom: 70px;
+    font-size: 20px;
+    color: #302e4d;
+}
+.home .home-img img {
+    height: 400px;
+    margin: auto;
+    border-radius: 15px;
+
+}
+.btn {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    background-color: #913982;
+    color: white;
+    border-radius: 40px;
+    white-space: nowrap;
+    border: none;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    transform: scale(1.05);
+}
+.home-img::after{
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    right: 20px;
+    bottom:-40px;
+    border-bottom: 15px solid black;
+    border-right: 15px solid black;
+}
+.home-img::before{
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    left: -20px;
+    top:-40px;
+    border-top: 15px solid black;
+    border-left: 15px solid black;
+}
+.section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+    padding-left: 32px;
+}
+.section-title h2{
+    font-size: 42px;
+    font-weight: 700;
+     color: #302e4d;
+     position: relative;
+}
+.section-title h2::before{
+    content: ' ';
+    height: 4px;
+    width: 50px;
+    color: #913982;
+    top: 100%;
+    left: 0;
+    position: absolute;
+}
+.section-title h2::after{
+    content: ' ';
+    height: 4px;
+    width: 25px;
+    color: #913982;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    margin-top: 8px;
+}
+
+
+.about .about-content
+{
+    flex: 0 0 100% ;
+    max-width: 100%;
+}
+.about .about-content .about-text{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .about-text h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: black;
+}
+.about .about-content .about-text h3 span{
+    color: #913982;
+}
+.about .about-content .about-text p{
+    font-size: 15px;
+    line-height: 20px;
+    color: black;
+}
+
+.about .about-content .personal-info {
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin-top: 40px;
+}
+.about .about-content .personal-info .info-item{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.about .about-content .personal-info .info-item p{
+    font-weight: 600px;
+    padding: 10px 0;
+    font-size: 15px;
+    color: black;
+    border-bottom: 1px solid grey;
+}
+.about .about-content .personal-info .info-item p span{
+    font-weight: 400;
+    color: #504e70;
+    margin-left: 4px;
+    display: inline-block;
+}
+.about .about-content .personal-info .info-item p span a{
+    font-weight: 400;
+    color: #504e70;
+    margin-left: 4px;
+    display: inline-block;
+}
+.about .about-content .personal-info .buttons {
+    margin-top: 50px;
+}
+.about .about-content .skills {
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 30px;
+}
+
+.about .about-content .skills .skill-item{
+    flex: 0 0 100%;
+    max-width: 100;
+    margin-bottom: 10px;
+}
+.about .about-content .skills .skill-item h5{
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+    text-transform: capitalize;
+}
+.about .about-content .skills .skill-item .progress
+{
+    background-color: var(--text-black-900);
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+.about .about-content .skills .skill-item .progress .progress-in{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: skyblue;
+}
+.about .about-content .skills .skill-item .skill-percent{
+    position: absolute;
+    right: 0;
+    top: -25px;
+    color: #504e70;
+    font-weight: 400;
+}
+
+.edu .edu-content
+{
+    flex: 0 0 100% ;
+    max-width: 100%;
+    padding-left: 50px;
+}
+.edu .edu-content .education{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 10px;
+}
+.edu .edu-content .education h3.title{
+    font-size: 45px;
+    font-weight: 700;
+    color: #302e4d;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 100px;
+}
+
+.edu .edu-content .project{
+    flex: 0 0 50%;
+    margin-top: 10px;
+}
+.edu .edu-content .project h3.title{
+    font-size: 45px;
+    font-weight: 700;
+    color: #302e4d;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 120px;
+}
+.edu .edu-content .education h3 i{
+    padding-left: 20px;
+}
+.edu .edu-content .timeline-box{
+    flex: 0 0 50%;
+    width: 40%;
+}
+.edu .edu-content .timeline{
+    background-color: beige;
+    padding: 30px 15px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 400px;
+
+    position: relative;
+}
+.edu .edu-content .timeline .timeline-item{
+    position: relative;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+.edu .edu-content .timeline .timeline-item::before{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: #302e4d;
+}
+.edu .edu-content .timeline .fa-solid{
+    margin-right: 15px;
+}
+.exp{
+    padding-left: 50px;
+}
+
+.exp h3{
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 2%;
+}
+.ninthsem{
+    flex: 0 0 50%;
+    max-width: 100%;
+    font-size: 25px;
+    height: 100%;
+    font-weight: 400;
+    text-align: center;
+    background-color: aliceblue;
+    padding-top: 5%;
+    border-right: 1px solid rgb(170, 193, 212);
+}
+
+.ninthsem p{
+    padding-top: 4%;
+    font-size: 16x;
+    line-height: 23px;
+    text-align: justify;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+.med{
+    flex: 0 0 50%;
+    max-width: 100%;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    background-color: aliceblue;
+    padding-top: 5%;
+    height: 57vh;
+}
+.med p{
+    font-size: 18x;
+    line-height: 28px;
+    text-align: justify;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+.butto{
+    flex: 0 0 50%;
+    padding-left: 17%;
+    margin-top: 7%;
+}
+.butt{
+    flex: 0 0 50%;
+    padding-left: 17%;
+    margin-top: 7%;
+}
+.contact-title{
+    color: #913982;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 20px;
+}
+.contact-sub-title{
+    color: #7d4975;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+.contact .contact-info-item {
+    flex: 0 0 25%;
+    text-align: center;
+    max-width: 25%;
+    margin-top: 9%;
+}
+.contact .contact-info-item .icon{
+    display: inline-block;
+}
+.contact .contact-info-item .icon .fa{
+    font-size: 25px;
+}
+.contact .contact-info-item h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+.contact .contact-info-item p{
+    font-size: 16px;
+    line-height: 25px;
+    color: #504e70;
+    font-weight: 400;
+}
+.contact .contact-form
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.col-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col-12{
+    flex: 0 0 100%;
+    width: 100%;
+}
+.contact .contact-form .form-item{
+    margin-bottom: 20px;
+}
+.contact .contact-form .form-item .form-control{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid rgb(187, 120, 187);
+    padding: 10px 25px;
+    font-size: 16px;
+    color: #504e70;
+    transition: all 0.3s ease;
+}
+.contact .contact-form .form-item .form-control:focus{
+    box-shadow:0 0 20px rgb(48,46,77,0.15);
+}
+.contact .contact-form .form-item textarea .form-control{
+    height: 120px;
+}
+.contact .contact-form .btn{
+    height: 50px;
+    padding: 0 50px;
+}
+@media (max-width:1199px)
+{
+    .side-container{
+        left: -270px;
+    }
+    .main-content{
+        padding-left: 0;
+    }
+    .about .about-content .personal-info .info-item p span{
+        display: block;
+        margin-left: 0;
+
+        }
+}
+@media (max-width:991px)
+{
+
+    .contact .contact-info-item,
+    .edu .edu-content{
+
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .home .home-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home .home-img{
+        display: none;
+    }
+}
+
+@media (max-width:991px){
+    .contact .contact-form .col-6,
+    .contact .contact-info-item,
+    .about .about-content .project
+    .about .about-content .education,
+    .about .about-content .skills,
+    .about .about-content .personal-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
